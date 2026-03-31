@@ -1,0 +1,625 @@
+<!doctype html>
+<html lang="es" style="scroll-behavior: smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Syara Méndez | Música en directo para cenas y eventos en Madrid
+    </title>
+    <!-- SEO META TAGS -->
+    <meta
+      name="description"
+      content="Shows de música en directo para cenas y eventos en Madrid, con equipo incluido y precios que se adaptan a ti, con canciones populares internacionales."
+    />
+    <meta
+      name="keywords"
+      content="música en directo, cantante para eventos, shows privados en españa, entertainer en madrid, serenata en madrid, show en vivo, madrid, banda para bodas, eventos privados, entretenimiento"
+    />
+    <meta name="author" content="Syara Méndez" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://syara.neocities.org/" />
+    <meta
+      property="og:title"
+      content="Syara Méndez | Shows en directo para cenas en Madrid"
+    />
+    <meta
+      property="og:description"
+      content="Shows de música en directo para cenas y eventos en Madrid, con equipo incluido y precios que se adaptan a ti, con canciones populares internacionales."
+    />
+    <meta
+      property="og:image"
+      content="https://syara.neocities.org/media/social_pic.png"
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://syara.neocities.org/" />
+    <meta
+      property="twitter:title"
+      content="Syara Méndez | Shows en directo para cenas en Madrid"
+    />
+    <meta
+      property="twitter:description"
+      content="Shows de música en directo para cenas y eventos en Madrid, con equipo incluido y precios que se adaptan a ti, con canciones populares internacionales."
+    />
+    <meta
+      property="twitter:image"
+      content="https://syara.neocities.org/media/social_pic.png"
+    />
+
+    <!-- FAVICON & CSS -->
+    <link rel="icon" href="media/favicon.webp" type="image/x-icon" />
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="stylesheet" href="src/hero_styles.css" />
+
+    <!-- ANIMATIONS CSS -->
+    <link rel="stylesheet" href="src/aoscroll.css" />
+    <!-- BOXICONS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.boxicons.com/3.0.8/fonts/basic/boxicons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.boxicons.com/3.0.8/fonts/filled/boxicons-filled.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.boxicons.com/3.0.8/fonts/brands/boxicons-brands.min.css"
+    />
+  </head>
+
+  <body class="bg-light text-body font-sans">
+    <!-- HEADER SECTION -->
+    <header
+      class="sticky top-0 z-[100] bg-transparent rounded-bl-4xl lg:rounded-bl-[48px] -mb-[100px] transition duration-300"
+    >
+      <nav class="max-w-7xl mx-auto flex justify-between items-center p-4">
+        <!-- SITE LOGO -->
+        <a href="#">
+          <img
+            src="media/logo_black.webp"
+            alt=""
+            class="w-24 md:w-28 lg:w-24"
+          />
+        </a>
+
+        <div class="flex items-center gap-5 lg:gap-10">
+          <div class="flex gap-4 lg:gap-8 pt-1 text-[1.7rem]">
+            <a
+              href="https://www.instagram.com/syaramendezz/"
+              target="_blank"
+              class="text-white hover:text-gray-300 transition-colors duration-200"
+            >
+              <i class="bxl bx-instagram-alt"></i>
+            </a>
+            <a
+              href="https://linktr.ee/syaramendezz"
+              target="_blank"
+              class="text-white hover:text-gray-300 transition-colors duration-200"
+            >
+              <i class="bxl bx-linktree"></i>
+            </a>
+          </div>
+          <a href="#precios">
+            <button
+              id="header_btn"
+              data-aos="fade-in"
+              data-aos-delay="800"
+              data-aos-duration="600"
+              data-aos-easing="ease-in-out"
+              data-aos-once="true"
+              class="bg-main text-white uppercase px-5 py-2 rounded-lg font-semibold font-body hover:bg-white hover:text-main hover:cursor-pointer"
+            >
+              Reservar
+            </button>
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- ICONS MENU -->
+    <aside
+      class="fixed right-4 bottom-8 lg:top-1/2 lg:-translate-y-1/2 flex flex-col gap-6 z-50"
+      data-aos="fade-in"
+      data-aos-delay="1200"
+      data-aos-duration="800"
+      data-aos-easing="ease-in-out"
+      data-aos-once="true"
+    >
+      <a href="#video">
+        <button
+          class="w-14 h-14 rounded-full bg-white shadow-xl flex items-center justify-center hover:bg-accent hover:cursor-pointer text-gray-800 hover:text-white transition-colors duration-200 border border-gray-200 hover:border-accent"
+        >
+          <svg
+            width="40"
+            height="40"
+            fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M4.667 5.5c-.645 0-1.167.522-1.167 1.167v6.666c0 .645.522 1.167 1.167 1.167h6.666c.645 0 1.167-.522 1.167-1.167V6.667c0-.645-.522-1.167-1.167-1.167H4.667zM2.5 6.667C2.5 5.47 3.47 4.5 4.667 4.5h6.666c1.197 0 2.167.97 2.167 2.167v6.666c0 1.197-.97 2.167-2.167 2.167H4.667A2.167 2.167 0 012.5 13.333V6.667z"
+              clip-rule="evenodd"
+            />
+            <path
+              fill-rule="evenodd"
+              d="M13.25 7.65l2.768-1.605a.318.318 0 01.482.263v7.384c0 .228-.26.393-.482.264l-2.767-1.605-.502.865 2.767 1.605c.859.498 1.984-.095 1.984-1.129V6.308c0-1.033-1.125-1.626-1.984-1.128L12.75 6.785l.502.865z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </button>
+      </a>
+      <a href="#about">
+        <button
+          class="w-14 h-14 rounded-full bg-white shadow-xl flex items-center justify-center hover:bg-accent hover:cursor-pointer text-gray-800 hover:text-white transition-colors duration-200 border border-gray-200 hover:border-accent"
+        >
+          <svg
+            width="40"
+            height="40"
+            fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M7 13.5a.5.5 0 01.5-.5h9a.5.5 0 010 1h-9a.5.5 0 01-.5-.5zm0-4a.5.5 0 01.5-.5h9a.5.5 0 010 1h-9a.5.5 0 01-.5-.5zm0-4a.5.5 0 01.5-.5h9a.5.5 0 010 1h-9a.5.5 0 01-.5-.5zM5.854 4.146a.5.5 0 010 .708l-1.5 1.5a.5.5 0 01-.708 0l-.5-.5a.5.5 0 11.708-.708L4 5.293l1.146-1.147a.5.5 0 01.708 0zm0 4a.5.5 0 010 .708l-1.5 1.5a.5.5 0 01-.708 0l-.5-.5a.5.5 0 11.708-.708L4 9.293l1.146-1.147a.5.5 0 01.708 0zm0 4a.5.5 0 010 .708l-1.5 1.5a.5.5 0 01-.708 0l-.5-.5a.5.5 0 01.708-.708l.146.147 1.146-1.147a.5.5 0 01.708 0z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </button>
+      </a>
+      <a href="#precios">
+        <button
+          class="w-14 h-14 rounded-full bg-white shadow-xl flex items-center justify-center hover:bg-accent hover:cursor-pointer text-gray-800 hover:text-white transition-colors duration-200 border border-gray-200 hover:border-accent"
+        >
+          <svg
+            width="40"
+            height="40"
+            fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M5.1 2.7a.5.5 0 01.4-.2h9a.5.5 0 01.4.2l2.976 3.974c.149.185.156.45.01.644L10.4 17.3a.5.5 0 01-.8 0l-7.5-10a.5.5 0 010-.6l3-4zm11.386 3.785l-1.806-2.41-.776 2.413 2.582-.003zm-3.633.004l.961-2.989H6.186l.963 2.995 5.704-.006zM7.47 7.495l5.062-.005L10 15.366 7.47 7.495zm-1.371-.999l-.78-2.422-1.818 2.425 2.598-.003zM3.499 7.5l2.92-.003 2.193 6.82L3.5 7.5zm7.889 6.817l2.194-6.828 2.929-.003-5.123 6.831z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </button>
+      </a>
+      <a href="#contacto">
+        <button
+          class="w-14 h-14 rounded-full bg-white shadow-xl flex items-center justify-center hover:bg-accent hover:cursor-pointer text-gray-800 hover:text-white transition-colors duration-200 border border-gray-200 hover:border-accent"
+        >
+          <svg
+            width="40"
+            height="40"
+            fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M8.207 13.293L7.5 14a5.5 5.5 0 110-11h5a5.5 5.5 0 110 11s-1.807 2.169-4.193 2.818C7.887 16.933 7.449 17 7 17c.291-.389.488-.74.617-1.052C8.149 14.649 7.5 14 7.5 14c.707-.707.708-.707.708-.706h.001l.002.003.004.004.01.01a1.184 1.184 0 01.074.084c.039.047.085.108.134.183.097.15.206.36.284.626.114.386.154.855.047 1.394.717-.313 1.37-.765 1.895-1.201a10.266 10.266 0 001.013-.969l.05-.056.01-.012m0 0A1 1 0 0112.5 13a4.5 4.5 0 100-9h-5a4.5 4.5 0 000 9 1 1 0 01.707.293"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </button>
+      </a>
+    </aside>
+
+    <main>
+      <!-- HERO (DESKTOP) -->
+      <section
+        style="
+          background-image: url(&quot;media/hero_bg_pc.webp&quot;);
+          background-position: center;
+          justify-content: center;
+        "
+        class="hero hero--desktop min-h-[100vh]"
+      >
+        <div class="text-center text-white">
+          <h1
+            class="text-6xl mb-20 font-titles"
+            style="text-shadow: black 0 3px 16px"
+            data-aos="fade-up"
+            data-aos-easing="ease-in-out"
+            data-aos-duration="800"
+          >
+            La elegancia tiene una voz
+          </h1>
+        </div>
+      </section>
+
+      <!-- HERO (MOBILE) -->
+      <section
+        style="
+          background-image: url(&quot;media/hero_bg_mob.webp&quot;);
+          background-position: top;
+        "
+        class="hero hero--mobile min-h-[100vh]"
+      >
+        <div class="max-w-6xl mx-auto pl-6 pr-10 text-left text-white">
+          <h1
+            class="text-5xl mb-32 md:mb-36 font-titles leading-tight"
+            style="text-shadow: black 0 3px 16px"
+            data-aos="fade-up"
+            data-aos-easing="ease-in-out"
+            data-aos-duration="800"
+          >
+            La elegancia tiene una voz
+          </h1>
+        </div>
+      </section>
+
+      <!-- VIDEO SECTION -->
+      <section id="video" class="bg-white py-24 text-center">
+        <div class="max-w-5xl mx-auto space-y-10">
+          <div class="max-w-3xl mb-16 px-5 mx-auto">
+            <h2
+              class="mb-7 text-5xl font-titles leading-tight lg:leading-snug text-cherry"
+            >
+              Así se vive la experiencia Syara
+            </h2>
+            <p
+              class="text-body font-body text-xl"
+              data-aos="fade-in"
+              data-aos-delay="600"
+              data-aos-duration="800"
+              data-aos-easing="ease-in-out"
+              data-aos-once="true"
+            >
+              Un recorrido por canciones que han marcado generaciones, en un
+              directo íntimo y sofisticado.
+            </p>
+          </div>
+          <div
+            class="aspect-video w-11/12 md:w-5/6 mx-auto mb-14 bg-black rounded-2xl overflow-hidden shadow-2xl"
+          >
+            <div
+              class="w-full h-full flex items-center justify-center text-white text-xl font-body italic"
+            >
+              <iframe
+                src="https://drive.google.com/file/d/1_AP268KO35JQpHydtn_9K5z1qZV0vnUy/preview"
+                width="100%"
+                height="100%"
+                loading="lazy"
+                allowfullscreen
+                style="aspect-ratio: 14/9"
+              ></iframe>
+            </div>
+          </div>
+          <a href="#precios">
+            <button
+              class="bg-accent text-white text-xl uppercase px-6 py-2 rounded-lg font-semibold font-body hover:bg-main hover:cursor-pointer transition-colors duration-200"
+            >
+              Reservar<span class="hidden md:visible md:inline">
+                Experiencia</span
+              >
+            </button>
+          </a>
+        </div>
+      </section>
+
+      <!-- FEATURES SECTION -->
+      <section
+        id="about"
+        class="py-24 px-5 lg:px-0"
+        style="
+          background-image: url(&quot;media/cards_bg.webp&quot;);
+          background-attachment: fixed;
+          background-position: center;
+          background-size: cover;
+        "
+      >
+        <div class="max-w-6xl mx-auto">
+          <div class="text-center mb-16">
+            <h2 class="mb-5 text-5xl font-titles leading-snug">
+              ¿Qué incluye cada show?
+            </h2>
+            <p class="text-body font-body text-xl">
+              Especial para cenas, after-dinner y ambientes lounge en Madrid.
+            </p>
+          </div>
+          <div
+            class="flex justify-around space-y-8 lg:space-y-0 flex-wrap lg:flex-nowrap lg:gap-8 lg:px-5 xl:px-0"
+          >
+            <div
+              class="w-full md:w-[47%] lg:flex-1 p-8 bg-white rounded-tr-3xl rounded-bl-3xl text-center shadow-lg"
+              data-aos="flip-up"
+              data-aos-duration="600"
+              data-aos-easing="ease-in-out"
+              data-aos-once="true"
+            >
+              <i class="bx bx-microphone-alt-2 mb-3 text-6xl text-cherry"></i>
+              <h3 class="font-titles text-cherry font-bold text-xl mb-4">
+                Voz en directo
+              </h3>
+              <p class="text-body font-body text-lg">
+                Con base instrumental y equipo incluido.
+              </p>
+            </div>
+            <div
+              class="w-full md:w-[47%] lg:flex-1 p-8 bg-white rounded-tr-3xl rounded-bl-3xl text-center shadow-lg"
+              data-aos="flip-up"
+              data-aos-delay="250"
+              data-aos-duration="600"
+              data-aos-easing="ease-in-out"
+              data-aos-once="true"
+            >
+              <i class="bx bx-music-alt mb-3 text-6xl text-cherry"></i>
+              <h3 class="font-titles text-cherry font-bold text-xl mb-4">
+                Amplio repertorio
+              </h3>
+              <p class="text-body font-body text-lg">
+                Variado, reconocido e internacional.
+              </p>
+            </div>
+            <div
+              class="w-full md:w-[47%] lg:flex-1 p-8 bg-white rounded-tr-3xl rounded-bl-3xl text-center shadow-lg"
+              data-aos="flip-up"
+              data-aos-delay="500"
+              data-aos-duration="600"
+              data-aos-easing="ease-in-out"
+              data-aos-once="true"
+            >
+              <i class="bx bx-speaker mb-3 text-6xl text-cherry"></i>
+              <h3 class="font-titles text-cherry font-bold text-xl mb-4">
+                Volumen adaptado
+              </h3>
+              <p class="text-body font-body text-lg">
+                A tu espacio, tu público y
+                <span class="lg:hidden">el tipo de</span> servicio.
+              </p>
+            </div>
+            <div
+              class="w-full md:w-[47%] lg:flex-1 p-8 mb-0 md:mb-8 lg:mb-0 bg-white rounded-tr-3xl rounded-bl-3xl text-center shadow-lg"
+              data-aos="flip-up"
+              data-aos-delay="750"
+              data-aos-duration="600"
+              data-aos-easing="ease-in-out"
+              data-aos-once="true"
+            >
+              <i class="bx bx-sparkles mb-3 text-6xl text-cherry"></i>
+              <h3 class="font-titles text-cherry font-bold text-xl mb-4">
+                Formato premium
+              </h3>
+              <p class="text-body font-body text-lg">
+                Para brindar un alto perfil al ambiente.
+              </p>
+            </div>
+          </div>
+
+          <div class="mt-16 text-center text-body text-xl font-body">
+            <p class="italic">
+              Cada evento es único. Cuéntanos tu idea y la hacemos realidad.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- PRICING SECTION -->
+      <section id="precios" class="bg-white py-24">
+        <div class="max-w-6xl mx-auto px-5">
+          <h2
+            class="text-5xl font-titles text-center text-main mb-16 leading-snug"
+          >
+            Elige el pack para tu show
+          </h2>
+          <div
+            class="flex flex-col md:flex-row md:flex-wrap lg:flex-nowrap gap-10 md:gap-0 md:justify-around lg:justify-between md:space-y-11 lg:space-y-0 lg:gap-10 items-stretch"
+          >
+            <div
+              class="md:w-[46%] lg:w-auto lg:flex-1 p-10 bg-transparent rounded-tl-3xl rounded-br-3xl border border-rose-800 flex flex-col justify-between"
+            >
+              <div class="mb-7">
+                <h4 class="mb-2 text-3xl font-titles text-main">
+                  Cena Elegante
+                </h4>
+                <p class="mb-4 text-lg font-body text-body">Desde</p>
+                <p class="text-4xl font-body font-semibold">
+                  €200
+                  <span class="font-body font-normal text-2xl">a</span> €250
+                </p>
+              </div>
+              <ul
+                class="mb-10 list-disc list-inside leading-loose text-xl text-body font-body"
+              >
+                <li>1 pase de 1 hora</li>
+                <li>Repertorio internacional</li>
+                <li>Ambiente Jazz y Pop</li>
+                <li>Equipos incluidos</li>
+              </ul>
+              <a href="https://wa.me/+34651591390" target="_blank">
+                <button
+                  class="w-full font-body hover:cursor-pointer hover:bg-accent transition-colors duration-400 bg-cherry uppercase text-white py-3 rounded-lg font-semibold"
+                >
+                  Contratar
+                </button>
+              </a>
+            </div>
+            <div
+              class="md:w-[46%] lg:w-auto lg:flex-1 p-10 bg-transparent rounded-tl-3xl rounded-br-3xl border border-rose-800 flex flex-col justify-between"
+            >
+              <div class="mb-7">
+                <h4 class="mb-2 text-3xl font-titles text-main">
+                  Cena & Copas
+                </h4>
+                <p class="mb-4 text-lg font-body text-body">Desde</p>
+                <p class="text-4xl font-body font-semibold">
+                  €350
+                  <span class="font-body font-normal text-2xl">a</span> €400
+                </p>
+              </div>
+              <ul
+                class="mb-10 list-disc list-inside leading-loose text-xl text-body font-body"
+              >
+                <li>2 pases de 45 min.</li>
+                <li>Repertorio internacional</li>
+                <li>Más energía al final</li>
+                <li>Equipos incluidos</li>
+              </ul>
+              <a href="https://wa.me/+34651591390" target="_blank">
+                <button
+                  class="w-full font-body hover:cursor-pointer hover:bg-accent transition-colors duration-400 bg-cherry uppercase text-white py-3 rounded-lg font-semibold"
+                >
+                  Contratar
+                </button>
+              </a>
+            </div>
+            <div
+              class="md:w-[46%] lg:w-auto lg:flex-1 p-10 bg-light rounded-tl-3xl rounded-br-3xl border border-rose-800 flex flex-col justify-between"
+            >
+              <div class="mb-7">
+                <h4 class="mb-2 text-3xl font-titles text-main">
+                  Eventos Especiales
+                </h4>
+                <p class="mb-4 text-lg font-body text-body">Precio</p>
+                <p class="text-4xl text-main font-body font-semibold">
+                  A consultar
+                </p>
+              </div>
+              <ul
+                class="mb-10 list-disc list-inside leading-loose text-xl text-body font-body"
+              >
+                <li>Duración a convenir</li>
+                <li>Formato adaptable</li>
+                <li>Repertorio personalizado</li>
+                <li>Detalles adicionales</li>
+              </ul>
+              <a href="https://wa.me/+34651591390" target="_blank">
+                <button
+                  class="w-full font-body hover:cursor-pointer hover:bg-accent transition-colors duration-400 bg-cherry uppercase text-white py-3 rounded-lg font-semibold"
+                >
+                  Consultar
+                </button>
+              </a>
+            </div>
+          </div>
+          <div class="mt-14 text-center text-main text-lg font-body">
+            <p class="italic">
+              <strong>Nota:</strong> para espacios grandes, se puede requerir
+              refuerzo técnico adicional (no incluido).
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT SECTION -->
+      <section id="contacto" class="max-w-6xl mx-auto py-24 px-4 text-center">
+        <h2 class="text-4xl text-main font-titles mb-12 leading-snug">
+          Información de Contacto
+        </h2>
+        <div
+          class="flex flex-wrap lg:flex-nowrap gap-8 justify-center"
+          data-aos="fade-up"
+          data-aos-delay="100"
+          data-aos-duration="800"
+          data-aos-easing="ease-in-out"
+          data-aos-once="true"
+        >
+          <div
+            class="flex-1 p-6 bg-white border border-gray-200 rounded-tr-3xl rounded-bl-3xl"
+          >
+            <i class="bxl bx-whatsapp block mb-4 text-cherry text-5xl"></i>
+            <p class="text-3xl tracking-wider text-cherry font-titles mb-4">
+              Mánager
+            </p>
+            <p class="font-body text-xl">+34 651 59 13 90</p>
+          </div>
+          <div
+            class="flex-1 p-6 bg-white border border-gray-200 rounded-tr-3xl rounded-bl-3xl"
+          >
+            <i class="bx bx-envelope-alt block mb-4 text-cherry text-5xl"></i>
+            <p class="text-3xl tracking-wider text-cherry font-titles mb-4">
+              Correo
+            </p>
+            <p class="font-body text-xl">syaramendez@gmail.com</p>
+          </div>
+          <div
+            class="flex-1 p-6 bg-white border border-gray-200 rounded-tr-3xl rounded-bl-3xl"
+          >
+            <i class="bx bx-location-alt-2 block mb-4 text-cherry text-5xl"></i>
+            <p class="text-3xl tracking-wider text-cherry font-titles mb-4">
+              Ubicación
+            </p>
+            <p class="font-body text-xl">Madrid, España</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- WHATSAPP BUTTON -->
+      <a
+        href="https://wa.me/+34651591390"
+        target="_blank"
+        class="fixed bottom-8 left-4 w-16 xl:w-20 h-16 xl:h-20 bg-green-500 hover:bg-[#25D366] text-white rounded-full flex items-center justify-center shadow-2xl z-50 text-[2.5rem] xl:text-[2.8rem] lg:text-5xl transition-colors duration-150"
+      >
+        <i class="bxl bx-whatsapp"></i>
+      </a>
+    </main>
+
+    <!-- FOOTER SECTION -->
+    <footer
+      class="py-14 px-7 lg:px-0 text-center text-white bg-main rounded-tr-[40px]"
+    >
+      <div class="lg:max-w-xl mx-auto flex flex-col items-center gap-8">
+        <img src="media/logo_light.webp" alt="" width="160" />
+        <p class="text-lg font-body italic">"Canto para iluminar almas."</p>
+        <div class="flex gap-8 text-3xl">
+          <a
+            href="https://www.instagram.com/syaramendezz/"
+            target="_blank"
+            class="hover:text-accent transition-colors duration-200"
+          >
+            <i class="bxl bx-instagram-alt"></i>
+          </a>
+          <a
+            href="https://www.tiktok.com/@syaramendezz"
+            target="_blank"
+            class="hover:text-accent transition-colors duration-200"
+          >
+            <i class="bxl bx-tiktok"></i>
+          </a>
+          <a
+            href="https://linktr.ee/syaramendezz"
+            target="_blank"
+            class="hover:text-accent transition-colors duration-200"
+          >
+            <i class="bxl bx-linktree"></i>
+          </a>
+          <a
+            href="https://www.youtube.com/@syaramendezz"
+            target="_blank"
+            class="hover:text-accent transition-colors duration-200"
+          >
+            <i class="bxl bx-youtube"></i>
+          </a>
+        </div>
+        <p class="text-sm mt-4 font-body uppercase tracking-widest">
+          Copyright &copy; 2026 Syara Méndez | <br class="md:hidden" />
+          Web:
+          <a
+            href="https://linkr.ee/alexmolinaws"
+            target="_blank"
+            class="font-bold"
+            >Alex Molina.</a
+          >
+        </p>
+      </div>
+    </footer>
+
+    <script src="src/aoscroll.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
+
+    <script src="src/interact.js"></script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+.hero {
+	align-items: end;
+	background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 919px) {
+	.hero--mobile {
+		display: flex !important;
+		visibility: visible !important;
+	}
+
+	.hero--desktop {
+		display: none !important;
+		visibility: hidden !important;
+	}
+}
+
+@media screen and (min-width: 920px) {
+	.hero--mobile {
+		display: none !important;
+		visibility: hidden !important;
+	}
+
+	.hero--desktop {
+		display: flex !important;
+		visibility: visible !important;
+	}
+}

@@ -1,0 +1,16 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import "tailwindcss";
+
+@theme {
+	--color-main: #450207;
+	--color-cherry: #580005;
+	--color-accent: #BF8C14;
+	--color-light: #FFF2DA;
+	--color-grey: #E8DED5;
+	--color-dark: #20110B;
+	--color-body: #080000;
+
+ 	--font-titles: "DM Serif Display", serif;
+ 	--font-body: "Open Sans", sans-serif;  
+}
