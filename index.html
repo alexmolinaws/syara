@@ -58,6 +58,7 @@
 
     <!-- ANIMATIONS CSS -->
     <link rel="stylesheet" href="src/aoscroll.css" />
+
     <!-- BOXICONS CDN -->
     <link
       rel="stylesheet"
@@ -73,12 +74,12 @@
     />
   </head>
 
-  <body class="bg-light text-body font-sans">
+  <body class="font-sans text-body bg-light">
     <!-- HEADER SECTION -->
     <header
-      class="sticky top-0 z-[100] bg-transparent rounded-bl-4xl lg:rounded-bl-[48px] -mb-[100px] transition duration-300"
+      class="z-[100] sticky top-0 -mb-[100px] rounded-bl-4xl lg:rounded-bl-[48px] bg-transparent transition duration-300"
     >
-      <nav class="max-w-7xl mx-auto flex justify-between items-center p-4">
+      <nav class="flex justify-between items-center max-w-7xl p-4 mx-auto">
         <!-- SITE LOGO -->
         <a href="#">
           <img
@@ -113,7 +114,7 @@
               data-aos-duration="600"
               data-aos-easing="ease-in-out"
               data-aos-once="true"
-              class="bg-main text-white uppercase px-5 py-2 rounded-lg font-semibold font-body hover:bg-white hover:text-main hover:cursor-pointer"
+              class="py-2 px-5 text-white uppercase rounded-lg font-body font-semibold hover:text-main bg-main hover:bg-white hover:cursor-pointer"
             >
               Reservar
             </button>
@@ -124,7 +125,7 @@
 
     <!-- ICONS MENU -->
     <aside
-      class="fixed right-4 bottom-8 lg:top-1/2 lg:-translate-y-1/2 flex flex-col gap-6 z-50"
+      class="z-50 fixed bottom-8 lg:top-1/2 lg:-translate-y-1/2 right-4 flex flex-col gap-6"
       data-aos="fade-in"
       data-aos-delay="1200"
       data-aos-duration="800"
@@ -133,7 +134,7 @@
     >
       <a href="#video">
         <button
-          class="w-14 h-14 rounded-full bg-white shadow-xl flex items-center justify-center hover:bg-accent hover:cursor-pointer text-gray-800 hover:text-white transition-colors duration-200 border border-gray-200 hover:border-accent"
+          class="flex items-center justify-center w-14 h-14 rounded-full border border-gray-200 hover:border-accent text-gray-800 hover:text-white bg-white hover:bg-accent shadow-xl hover:cursor-pointer transition-colors duration-200"
         >
           <svg
             width="40"
@@ -157,7 +158,7 @@
       </a>
       <a href="#shows">
         <button
-          class="w-14 h-14 rounded-full bg-white shadow-xl flex items-center justify-center hover:bg-accent hover:cursor-pointer text-gray-800 hover:text-white transition-colors duration-200 border border-gray-200 hover:border-accent"
+          class="flex items-center justify-center w-14 h-14 rounded-full border border-gray-200 hover:border-accent text-gray-800 hover:text-white bg-white hover:bg-accent shadow-xl hover:cursor-pointer transition-colors duration-200"
         >
           <svg
             width="40"
@@ -176,7 +177,7 @@
       </a>
       <a href="#precios">
         <button
-          class="w-14 h-14 rounded-full bg-white shadow-xl flex items-center justify-center hover:bg-accent hover:cursor-pointer text-gray-800 hover:text-white transition-colors duration-200 border border-gray-200 hover:border-accent"
+          class="flex items-center justify-center w-14 h-14 rounded-full border border-gray-200 hover:border-accent text-gray-800 hover:text-white bg-white hover:bg-accent shadow-xl hover:cursor-pointer transition-colors duration-200"
         >
           <svg
             width="40"
@@ -195,7 +196,7 @@
       </a>
       <a href="#contacto">
         <button
-          class="w-14 h-14 rounded-full bg-white shadow-xl flex items-center justify-center hover:bg-accent hover:cursor-pointer text-gray-800 hover:text-white transition-colors duration-200 border border-gray-200 hover:border-accent"
+          class="flex items-center justify-center w-14 h-14 rounded-full border border-gray-200 hover:border-accent text-gray-800 hover:text-white bg-white hover:bg-accent shadow-xl hover:cursor-pointer transition-colors duration-200"
         >
           <svg
             width="40"
@@ -217,16 +218,16 @@
     <main>
       <!-- HERO (DESKTOP) -->
       <section
+        class="hero hero--desktop min-h-[100vh]"
         style="
           background-image: url(&quot;media/hero_bg_pc.webp&quot;);
           background-position: center;
           justify-content: center;
         "
-        class="hero hero--desktop min-h-[100vh]"
       >
         <div class="text-center text-white">
           <h1
-            class="text-6xl mb-20 font-titles"
+            class="mb-20 font-titles text-6xl"
             style="text-shadow: black 0 3px 16px"
             data-aos="fade-up"
             data-aos-easing="ease-in-out"
@@ -239,36 +240,36 @@
 
       <!-- HERO (MOBILE) -->
       <section
+        class="hero hero--mobile min-h-[100vh]"
         style="
           background-image: url(&quot;media/hero_bg_mob.webp&quot;);
           background-position: top;
         "
-        class="hero hero--mobile min-h-[100vh]"
       >
-        <div class="max-w-6xl mx-auto pl-6 pr-10 text-left text-white">
-          <h1
-            class="text-5xl mb-32 md:mb-36 font-titles leading-tight"
+        <div class="max-w-6xl pl-6 pr-10 mx-auto text-left text-white">
+          <h2
+            class="mb-32 md:mb-36 font-titles text-5xl leading-tight"
             style="text-shadow: black 0 3px 16px"
             data-aos="fade-up"
             data-aos-easing="ease-in-out"
             data-aos-duration="800"
           >
             La elegancia tiene una voz
-          </h1>
+          </h2>
         </div>
       </section>
 
       <!-- VIDEO SECTION -->
-      <section id="video" class="bg-white py-24 text-center">
-        <div class="max-w-5xl mx-auto space-y-10">
-          <div class="max-w-3xl mb-16 px-5 mx-auto">
+      <section id="video" class="py-24 text-center bg-white">
+        <div class="max-w-5xl space-y-10 mx-auto">
+          <div class="max-w-3xl px-5 mb-16 mx-auto">
             <h2
-              class="mb-7 text-4xl md:text-[2.4rem] lg:text-[2.7rem] font-titles leading-tight lg:leading-snug text-cherry"
+              class="mb-7 font-titles text-4xl md:text-[2.4rem] lg:text-[2.7rem] leading-tight lg:leading-snug text-cherry"
             >
               Así se vive la experiencia Syara
             </h2>
             <p
-              class="text-body font-body text-xl"
+              class="font-body text-xl text-body"
               data-aos="fade-in"
               data-aos-delay="600"
               data-aos-duration="800"
@@ -280,10 +281,10 @@
             </p>
           </div>
           <div
-            class="aspect-video w-11/12 md:w-5/6 mx-auto mb-14 bg-black rounded-2xl overflow-hidden shadow-2xl"
+            class="aspect-video w-11/12 md:w-5/6 rounded-2xl mb-14 mx-auto overflow-hidden bg-black shadow-2xl"
           >
             <div
-              class="w-full h-full flex items-center justify-center text-white text-xl font-body italic"
+              class="flex items-center justify-center w-full h-full font-body italic text-xl text-white"
             >
               <iframe
                 src="https://drive.google.com/file/d/1_AP268KO35JQpHydtn_9K5z1qZV0vnUy/preview"
@@ -297,7 +298,7 @@
           </div>
           <a href="#precios">
             <button
-              class="bg-accent text-white text-xl uppercase px-6 py-2 rounded-lg font-semibold font-body hover:bg-main hover:cursor-pointer transition-colors duration-200"
+              class="px-6 py-2 rounded-lg text-xl font-body text-white uppercase font-semibold bg-accent hover:bg-main hover:cursor-pointer transition-colors duration-200"
             >
               Reservar<span class="hidden md:visible md:inline">
                 Experiencia</span
@@ -319,34 +320,34 @@
         "
       >
         <div class="max-w-6xl mx-auto">
-          <div class="text-center mb-16">
-            <h2 class="mb-5 text-5xl font-titles leading-tight">
+          <div class="mb-16 text-center">
+            <h3 class="mb-5 font-titles text-5xl leading-tight">
               ¿Qué incluye cada show?
-            </h2>
-            <p class="text-body font-body text-xl">
+            </h3>
+            <p class="font-body text-xl text-body">
               Especial para cenas, after-dinner y ambientes lounge en Madrid.
             </p>
           </div>
           <div
-            class="flex justify-around space-y-8 lg:space-y-0 flex-wrap lg:flex-nowrap lg:gap-8 lg:px-5 xl:px-0"
+            class="flex flex-wrap lg:flex-nowrap lg:gap-8 justify-around space-y-8 lg:space-y-0 lg:px-5 xl:px-0"
           >
             <div
-              class="w-full md:w-[47%] lg:flex-1 p-8 bg-white rounded-tr-3xl rounded-bl-3xl text-center shadow-lg"
+              class="lg:flex-1 w-full md:w-[47%] p-8 rounded-tr-3xl rounded-bl-3xl text-center bg-white shadow-lg"
               data-aos="flip-up"
               data-aos-duration="600"
               data-aos-easing="ease-in-out"
               data-aos-once="true"
             >
               <i class="bx bx-microphone-alt-2 mb-3 text-6xl text-cherry"></i>
-              <h3 class="font-titles text-cherry font-bold text-xl mb-4">
+              <h4 class="mb-4 font-titles font-bold text-xl text-cherry">
                 Voz en directo
-              </h3>
-              <p class="text-body font-body text-lg">
+              </h4>
+              <p class="font-body text-lg text-body">
                 Con base instrumental y equipo incluido.
               </p>
             </div>
             <div
-              class="w-full md:w-[47%] lg:flex-1 p-8 bg-white rounded-tr-3xl rounded-bl-3xl text-center shadow-lg"
+              class="lg:flex-1 w-full md:w-[47%] p-8 rounded-tr-3xl rounded-bl-3xl text-center bg-white shadow-lg"
               data-aos="flip-up"
               data-aos-delay="250"
               data-aos-duration="600"
@@ -354,15 +355,15 @@
               data-aos-once="true"
             >
               <i class="bx bx-music-alt mb-3 text-6xl text-cherry"></i>
-              <h3 class="font-titles text-cherry font-bold text-xl mb-4">
+              <h4 class="mb-4 font-titles font-bold text-xl text-cherry">
                 Amplio repertorio
-              </h3>
-              <p class="text-body font-body text-lg">
+              </h4>
+              <p class="font-body text-lg text-body">
                 Variado, reconocido e internacional.
               </p>
             </div>
             <div
-              class="w-full md:w-[47%] lg:flex-1 p-8 bg-white rounded-tr-3xl rounded-bl-3xl text-center shadow-lg"
+              class="lg:flex-1 w-full md:w-[47%] p-8 rounded-tr-3xl rounded-bl-3xl text-center bg-white shadow-lg"
               data-aos="flip-up"
               data-aos-delay="500"
               data-aos-duration="600"
@@ -370,16 +371,16 @@
               data-aos-once="true"
             >
               <i class="bx bx-speaker mb-3 text-6xl text-cherry"></i>
-              <h3 class="font-titles text-cherry font-bold text-xl mb-4">
+              <h4 class="mb-4 font-titles font-bold text-xl text-cherry">
                 Volumen adaptado
-              </h3>
-              <p class="text-body font-body text-lg">
+              </h4>
+              <p class="font-body text-lg text-body">
                 A tu espacio, tu público y
                 <span class="lg:hidden">el tipo de</span> servicio.
               </p>
             </div>
             <div
-              class="w-full md:w-[47%] lg:flex-1 p-8 mb-0 md:mb-8 lg:mb-0 bg-white rounded-tr-3xl rounded-bl-3xl text-center shadow-lg"
+              class="lg:flex-1 w-full md:w-[47%] p-8 rounded-tr-3xl rounded-bl-3xl text-center bg-white shadow-lg"
               data-aos="flip-up"
               data-aos-delay="750"
               data-aos-duration="600"
@@ -387,49 +388,49 @@
               data-aos-once="true"
             >
               <i class="bx bx-sparkles mb-3 text-6xl text-cherry"></i>
-              <h3 class="font-titles text-cherry font-bold text-xl mb-4">
+              <h4 class="mb-4 font-titles font-bold text-xl text-cherry">
                 Formato premium
-              </h3>
-              <p class="text-body font-body text-lg">
+              </h4>
+              <p class="font-body text-lg text-body">
                 Para brindar un alto perfil al ambiente.
               </p>
             </div>
           </div>
 
-          <div class="mt-16 text-center text-body text-xl font-body">
-            <p class="italic">
+          <div class="mt-16 font-body text-center text-xl text-body">
+            <span class="block italic">
               Cada evento es único. Cuéntanos tu idea y la hacemos realidad.
-            </p>
+            </span>
           </div>
         </div>
       </section>
 
       <!-- PRICING SECTION -->
-      <section id="precios" class="bg-white py-24">
-        <div class="max-w-6xl mx-auto px-5">
-          <h2
-            class="text-[2.5rem] font-titles text-center text-main mb-16 leading-tight"
+      <section id="precios" class="py-24 bg-white">
+        <div class="max-w-6xl px-5 mx-auto">
+          <h1
+            class="mb-16 font-titles leading-tight text-center text-[2.5rem] text-main"
           >
             Experiencias musicales para cada ocasión
-          </h2>
+          </h1>
           <div
-            class="flex flex-col md:flex-row md:flex-wrap lg:flex-nowrap gap-10 md:gap-0 md:justify-around lg:justify-between md:space-y-11 lg:space-y-0 lg:gap-10 items-stretch"
+            class="flex flex-col md:flex-row md:justify-around lg:justify-between md:flex-wrap lg:flex-nowrap gap-10 md:gap-0 lg:gap-10 md:space-y-11 lg:space-y-0 items-stretch"
           >
             <div
-              class="md:w-[46%] lg:w-auto lg:flex-1 p-10 bg-transparent rounded-tl-3xl rounded-br-3xl border border-rose-800 flex flex-col justify-between"
+              class="lg:flex-1 flex flex-col justify-between md:w-[46%] lg:w-auto p-10 border border-rose-800 rounded-tl-3xl rounded-br-3xl bg-transparent"
             >
               <div class="mb-7">
-                <h4 class="mb-2 text-3xl font-titles text-main">
+                <h2 class="mb-2 font-titles text-3xl text-main">
                   Cena Elegante
-                </h4>
-                <p class="mb-4 text-lg font-body text-body">Desde</p>
-                <p class="text-4xl font-body font-semibold">
+                </h2>
+                <p class="mb-4 font-body text-lg text-body">Desde</p>
+                <p class="font-body font-semibold text-4xl">
                   300€
                   <span class="font-body font-medium text-xl">+ IVA</span>
                 </p>
               </div>
               <ul
-                class="mb-10 list-disc list-inside leading-[2.6rem] text-[1.2rem] text-body font-body"
+                class="mb-10 list-disc list-inside font-body text-[1.2rem] text-body leading-[2.6rem]"
               >
                 <li>1 hora - 2 sets de 30 min</li>
                 <li>Voz + base instrumental</li>
@@ -439,27 +440,27 @@
               </ul>
               <a href="https://wa.me/+34651591390" target="_blank">
                 <button
-                  class="w-full font-body hover:cursor-pointer hover:bg-accent transition-colors duration-400 bg-cherry uppercase text-white py-3 rounded-lg font-semibold"
+                  class="w-full py-3 rounded-lg font-body bg-cherry hover:bg-accent font-semibold uppercase text-white hover:cursor-pointer transition-colors duration-400"
                 >
                   Contratar
                 </button>
               </a>
             </div>
             <div
-              class="md:w-[46%] lg:w-auto lg:flex-1 p-10 bg-transparent rounded-tl-3xl rounded-br-3xl border border-rose-800 flex flex-col justify-between"
+              class="lg:flex-1 flex flex-col justify-between md:w-[46%] lg:w-auto p-10 border border-rose-800 rounded-tl-3xl rounded-br-3xl bg-transparent"
             >
               <div class="mb-7">
-                <h4 class="mb-2 text-3xl font-titles text-main">
+                <h2 class="mb-2 font-titles text-3xl text-main">
                   Cena & Copas
-                </h4>
-                <p class="mb-4 text-lg font-body text-body">Desde</p>
-                <p class="text-4xl font-body font-semibold">
+                </h2>
+                <p class="mb-4 font-body text-lg text-body">Desde</p>
+                <p class="font-body font-semibold text-4xl">
                   450€
                   <span class="font-body font-medium text-xl">+ IVA</span>
                 </p>
               </div>
               <ul
-                class="mb-10 list-disc list-inside leading-[2.6rem] text-[1.2rem] text-body font-body"
+                class="mb-10 list-disc list-inside font-body text-[1.2rem] text-body leading-[2.6rem]"
               >
                 <li>2 horas - 2 sets de 60 min</li>
                 <li>Voz + base instrumental</li>
@@ -469,26 +470,26 @@
               </ul>
               <a href="https://wa.me/+34651591390" target="_blank">
                 <button
-                  class="w-full font-body hover:cursor-pointer hover:bg-accent transition-colors duration-400 bg-cherry uppercase text-white py-3 rounded-lg font-semibold"
+                  class="w-full py-3 rounded-lg font-body bg-cherry hover:bg-accent font-semibold uppercase text-white hover:cursor-pointer transition-colors duration-400"
                 >
                   Contratar
                 </button>
               </a>
             </div>
             <div
-              class="md:w-[46%] lg:w-auto lg:flex-1 p-10 bg-[#FFF1F1] rounded-tl-3xl rounded-br-3xl border border-rose-800 flex flex-col justify-between"
+              class="lg:flex-1 flex flex-col justify-between md:w-[46%] lg:w-auto p-10 border border-rose-800 rounded-tl-3xl rounded-br-3xl bg-[#FFF1F1]"
             >
               <div class="mb-7">
-                <h4 class="mb-2 text-3xl font-titles text-main">
+                <h2 class="mb-2 font-titles text-3xl text-main">
                   Eventos Especiales
-                </h4>
-                <p class="mb-4 text-lg font-body text-body">Precio</p>
-                <p class="text-4xl text-main font-body font-semibold">
+                </h2>
+                <p class="mb-4 font-body text-lg text-body">Precio</p>
+                <p class="font-body font-semibold text-4xl text-main">
                   A consultar
                 </p>
               </div>
               <ul
-                class="mb-10 list-disc list-inside leading-[2.6rem] text-[1.2rem] text-body font-body"
+                class="mb-10 list-disc list-inside font-body text-[1.2rem] text-body leading-[2.6rem]"
               >
                 <li>Duración a convenir</li>
                 <li>Formato 100% adaptable</li>
@@ -498,14 +499,14 @@
               </ul>
               <a href="https://wa.me/+34651591390" target="_blank">
                 <button
-                  class="w-full font-body hover:cursor-pointer hover:bg-accent transition-colors duration-400 bg-cherry uppercase text-white py-3 rounded-lg font-semibold"
+                  class="w-full py-3 rounded-lg font-body bg-cherry hover:bg-accent font-semibold uppercase text-white hover:cursor-pointer transition-colors duration-400"
                 >
                   Consultar
                 </button>
               </a>
             </div>
           </div>
-          <div class="mt-14 text-center text-main text-lg font-body">
+          <div class="mt-14 font-body text-center text-lg text-main">
             <p class="italic">
               <strong>Nota:</strong> para espacios grandes, se puede requerir
               refuerzo técnico adicional (no incluido).
@@ -515,10 +516,10 @@
       </section>
 
       <!-- CONTACT SECTION -->
-      <section id="contacto" class="max-w-6xl mx-auto py-24 px-4 text-center">
-        <h2 class="text-[2.6rem] text-main font-titles mb-12 leading-snug">
+      <section id="contacto" class="max-w-6xl py-24 px-4 mx-auto text-center">
+        <h1 class="mb-12 font-titles text-[2.6rem] text-main leading-snug">
           Información de Contacto
-        </h2>
+        </h1>
         <div
           class="flex flex-wrap lg:flex-nowrap gap-8 justify-center"
           data-aos="fade-up"
@@ -530,8 +531,8 @@
           <div
             class="flex-1 p-6 bg-white border border-gray-200 rounded-tr-3xl rounded-bl-3xl"
           >
-            <i class="bxl bx-whatsapp block mb-4 text-cherry text-5xl"></i>
-            <p class="text-3xl tracking-wider text-cherry font-titles mb-4">
+            <i class="bxl bx-whatsapp block mb-4 text-5xl text-cherry"></i>
+            <p class="mb-4 font-titles text-3xl text-cherry tracking-wider">
               Mánager
             </p>
             <p class="font-body text-xl">+34 651 59 13 90</p>
@@ -539,8 +540,8 @@
           <div
             class="flex-1 p-6 bg-white border border-gray-200 rounded-tr-3xl rounded-bl-3xl"
           >
-            <i class="bx bx-envelope-alt block mb-4 text-cherry text-5xl"></i>
-            <p class="text-3xl tracking-wider text-cherry font-titles mb-4">
+            <i class="bx bx-envelope-alt block mb-4 text-5xl text-cherry"></i>
+            <p class="mb-4 font-titles text-3xl text-cherry tracking-wider">
               Correo
             </p>
             <p class="font-body text-xl">syaramendez@gmail.com</p>
@@ -548,8 +549,8 @@
           <div
             class="flex-1 p-6 bg-white border border-gray-200 rounded-tr-3xl rounded-bl-3xl"
           >
-            <i class="bx bx-location-alt-2 block mb-4 text-cherry text-5xl"></i>
-            <p class="text-3xl tracking-wider text-cherry font-titles mb-4">
+            <i class="bx bx-location-alt-2 block mb-4 text-5xl text-cherry"></i>
+            <p class="mb-4 font-titles text-3xl text-cherry tracking-wider">
               Ubicación
             </p>
             <p class="font-body text-xl">Madrid, España</p>
@@ -561,7 +562,7 @@
       <a
         href="https://wa.me/+34651591390"
         target="_blank"
-        class="fixed bottom-8 left-4 w-16 xl:w-20 h-16 xl:h-20 bg-green-500 hover:bg-[#25D366] text-white rounded-full flex items-center justify-center shadow-2xl z-50 text-[2.5rem] xl:text-[2.8rem] lg:text-5xl transition-colors duration-150"
+        class="z-50 fixed bottom-8 left-4 flex items-center justify-center w-16 xl:w-20 h-16 xl:h-20 rounded-full text-white bg-green-500 hover:bg-[#25D366] text-[2.5rem] lg:text-5xl xl:text-[2.8rem] shadow-2xl transition-colors duration-150"
       >
         <i class="bxl bx-whatsapp"></i>
       </a>
@@ -569,11 +570,11 @@
 
     <!-- FOOTER SECTION -->
     <footer
-      class="py-14 px-7 lg:px-0 text-center text-white bg-main rounded-tr-[40px]"
+      class="py-14 px-7 lg:px-0 rounded-tr-[40px] text-center text-white bg-main"
     >
-      <div class="lg:max-w-xl mx-auto flex flex-col items-center gap-8">
+      <div class="flex flex-col items-center gap-8 lg:max-w-xl mx-auto">
         <img src="media/logo_light.webp" alt="" width="160" />
-        <p class="text-lg font-body italic">"Canto para iluminar almas."</p>
+        <p class="font-body text-lg italic">"Canto para iluminar almas."</p>
         <div class="flex gap-8 text-3xl">
           <a
             href="https://www.instagram.com/syaramendezz/"
@@ -604,7 +605,7 @@
             <i class="bxl bx-youtube"></i>
           </a>
         </div>
-        <p class="text-sm mt-4 font-body uppercase tracking-widest">
+        <p class="mt-4 font-body text-sm tracking-widest uppercase">
           Copyright &copy; 2026 Syara Méndez | <br class="md:hidden" />
           Web:
           <a
