@@ -16,7 +16,8 @@
       content="música en directo, cantante para eventos, shows privados en españa, entertainer en madrid, serenata en madrid, show en vivo, madrid, banda para bodas, eventos privados, entretenimiento"
     />
     <meta name="author" content="Syara Méndez" />
-    <meta name="robots" content="index, follow" />
+    <!-- Use "index, follow" in production -->
+    <meta name="robots" content="noindex, nofollow" />
     <meta name="theme-color" content="#ffffff" />
 
     <!-- Open Graph / Facebook -->
@@ -81,7 +82,7 @@
     >
       <nav class="flex justify-between items-center max-w-7xl p-4 mx-auto">
         <!-- SITE LOGO -->
-        <a href="#">
+        <a href="#" role="button" aria-label="ir arriba">
           <img
             src="media/logo_black.webp"
             alt=""
@@ -95,6 +96,8 @@
               href="https://www.instagram.com/syaramendezz/"
               target="_blank"
               class="text-white hover:text-gray-300 transition-colors duration-200"
+              role="button"
+              aria-label="link a instagram"
             >
               <i class="bxl bx-instagram-alt"></i>
             </a>
@@ -102,6 +105,8 @@
               href="https://linktr.ee/syaramendezz"
               target="_blank"
               class="text-white hover:text-gray-300 transition-colors duration-200"
+              role="button"
+              aria-label="link a más enlaces"
             >
               <i class="bxl bx-linktree"></i>
             </a>
@@ -109,11 +114,6 @@
           <a href="#precios">
             <button
               id="header_btn"
-              data-aos="fade-in"
-              data-aos-delay="800"
-              data-aos-duration="600"
-              data-aos-easing="ease-in-out"
-              data-aos-once="true"
               class="py-2 px-5 text-white uppercase rounded-lg font-body font-semibold hover:text-main bg-main hover:bg-white hover:cursor-pointer"
             >
               Reservar
@@ -127,7 +127,6 @@
     <aside
       class="z-50 fixed bottom-8 lg:top-1/2 lg:-translate-y-1/2 right-4 flex flex-col gap-6"
       data-aos="fade-in"
-      data-aos-delay="1200"
       data-aos-duration="800"
       data-aos-easing="ease-in-out"
       data-aos-once="true"
@@ -135,6 +134,7 @@
       <a href="#video">
         <button
           class="flex items-center justify-center w-14 h-14 rounded-full border border-gray-200 hover:border-accent text-gray-800 hover:text-white bg-white hover:bg-accent shadow-xl hover:cursor-pointer transition-colors duration-200"
+          aria-label="ver video"
         >
           <svg
             width="40"
@@ -158,7 +158,7 @@
       </a>
       <a href="#shows">
         <button
-          class="flex items-center justify-center w-14 h-14 rounded-full border border-gray-200 hover:border-accent text-gray-800 hover:text-white bg-white hover:bg-accent shadow-xl hover:cursor-pointer transition-colors duration-200"
+          class="flex items-center justify-center w-14 h-14 rounded-full border border-gray-200 hover:border-accent text-gray-800 hover:text-white bg-white hover:bg-accent shadow-xl hover:cursor-pointer transition-colors duration-200" aria-label="servicios"
         >
           <svg
             width="40"
@@ -177,7 +177,7 @@
       </a>
       <a href="#precios">
         <button
-          class="flex items-center justify-center w-14 h-14 rounded-full border border-gray-200 hover:border-accent text-gray-800 hover:text-white bg-white hover:bg-accent shadow-xl hover:cursor-pointer transition-colors duration-200"
+          class="flex items-center justify-center w-14 h-14 rounded-full border border-gray-200 hover:border-accent text-gray-800 hover:text-white bg-white hover:bg-accent shadow-xl hover:cursor-pointer transition-colors duration-200" aria-label="precios"
         >
           <svg
             width="40"
@@ -196,7 +196,7 @@
       </a>
       <a href="#contacto">
         <button
-          class="flex items-center justify-center w-14 h-14 rounded-full border border-gray-200 hover:border-accent text-gray-800 hover:text-white bg-white hover:bg-accent shadow-xl hover:cursor-pointer transition-colors duration-200"
+          class="flex items-center justify-center w-14 h-14 rounded-full border border-gray-200 hover:border-accent text-gray-800 hover:text-white bg-white hover:bg-accent shadow-xl hover:cursor-pointer transition-colors duration-200" aria-label="contacto"
         >
           <svg
             width="40"
@@ -229,9 +229,6 @@
           <h1
             class="mb-20 font-titles text-6xl"
             style="text-shadow: black 0 3px 16px"
-            data-aos="fade-up"
-            data-aos-easing="ease-in-out"
-            data-aos-duration="800"
           >
             La elegancia tiene una voz
           </h1>
@@ -250,9 +247,6 @@
           <h2
             class="mb-32 md:mb-36 font-titles text-5xl leading-tight"
             style="text-shadow: black 0 3px 16px"
-            data-aos="fade-up"
-            data-aos-easing="ease-in-out"
-            data-aos-duration="800"
           >
             La elegancia tiene una voz
           </h2>
@@ -272,7 +266,7 @@
               class="font-body text-xl text-body"
               data-aos="fade-in"
               data-aos-delay="600"
-              data-aos-duration="800"
+              data-aos-duration="700"
               data-aos-easing="ease-in-out"
               data-aos-once="true"
             >
@@ -287,6 +281,7 @@
               class="flex items-center justify-center w-full h-full font-body italic text-xl text-white"
             >
               <iframe
+                title="video muestra"
                 src="https://drive.google.com/file/d/1_AP268KO35JQpHydtn_9K5z1qZV0vnUy/preview"
                 width="100%"
                 height="100%"
@@ -334,7 +329,7 @@
             <div
               class="lg:flex-1 w-full md:w-[47%] p-8 rounded-tr-3xl rounded-bl-3xl text-center bg-white shadow-lg"
               data-aos="flip-up"
-              data-aos-duration="600"
+              data-aos-duration="500"
               data-aos-easing="ease-in-out"
               data-aos-once="true"
             >
@@ -350,7 +345,7 @@
               class="lg:flex-1 w-full md:w-[47%] p-8 rounded-tr-3xl rounded-bl-3xl text-center bg-white shadow-lg"
               data-aos="flip-up"
               data-aos-delay="250"
-              data-aos-duration="600"
+              data-aos-duration="500"
               data-aos-easing="ease-in-out"
               data-aos-once="true"
             >
@@ -366,7 +361,7 @@
               class="lg:flex-1 w-full md:w-[47%] p-8 rounded-tr-3xl rounded-bl-3xl text-center bg-white shadow-lg"
               data-aos="flip-up"
               data-aos-delay="500"
-              data-aos-duration="600"
+              data-aos-duration="500"
               data-aos-easing="ease-in-out"
               data-aos-once="true"
             >
@@ -383,7 +378,7 @@
               class="lg:flex-1 w-full md:w-[47%] p-8 rounded-tr-3xl rounded-bl-3xl md:mb-8 lg:mb-0 text-center bg-white shadow-lg"
               data-aos="flip-up"
               data-aos-delay="750"
-              data-aos-duration="600"
+              data-aos-duration="500"
               data-aos-easing="ease-in-out"
               data-aos-once="true"
             >
@@ -524,7 +519,7 @@
           class="flex flex-wrap lg:flex-nowrap gap-8 justify-center"
           data-aos="fade-up"
           data-aos-delay="100"
-          data-aos-duration="800"
+          data-aos-duration="600"
           data-aos-easing="ease-in-out"
           data-aos-once="true"
         >
@@ -562,7 +557,7 @@
       <a
         href="https://wa.me/+34651591390"
         target="_blank"
-        class="z-50 fixed bottom-8 left-4 flex items-center justify-center w-16 xl:w-20 h-16 xl:h-20 rounded-full text-white bg-green-500 hover:bg-[#25D366] text-[2.5rem] lg:text-5xl xl:text-[2.8rem] shadow-2xl transition-colors duration-150"
+        class="z-50 fixed bottom-8 left-4 flex items-center justify-center w-16 xl:w-20 h-16 xl:h-20 rounded-full text-white bg-green-500 hover:bg-[#25D366] text-[2.5rem] lg:text-5xl xl:text-[2.8rem] shadow-2xl transition-colors duration-150" role="button" aria-label="whatsapp"
       >
         <i class="bxl bx-whatsapp"></i>
       </a>
@@ -580,6 +575,7 @@
             href="https://www.instagram.com/syaramendezz/"
             target="_blank"
             class="hover:text-accent transition-colors duration-200"
+            role="button" aria-label="ver instagram"
           >
             <i class="bxl bx-instagram-alt"></i>
           </a>
@@ -587,6 +583,7 @@
             href="https://www.tiktok.com/@syaramendezz"
             target="_blank"
             class="hover:text-accent transition-colors duration-200"
+            role="button" aria-label="visitar tiktok"
           >
             <i class="bxl bx-tiktok"></i>
           </a>
@@ -594,6 +591,7 @@
             href="https://linktr.ee/syaramendezz"
             target="_blank"
             class="hover:text-accent transition-colors duration-200"
+            role="button" aria-label="más enlaces"
           >
             <i class="bxl bx-linktree"></i>
           </a>
@@ -601,6 +599,7 @@
             href="https://www.youtube.com/@syaramendezz"
             target="_blank"
             class="hover:text-accent transition-colors duration-200"
+            role="button" aria-label="ver en youtube"
           >
             <i class="bxl bx-youtube"></i>
           </a>
