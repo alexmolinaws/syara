@@ -1,6 +1,17 @@
 /*! tailwindcss v4.2.2 | MIT License | https://tailwindcss.com */
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 @layer properties;
+@font-face {
+  font-family: "DM Serif Display";
+  src: url('fonts/dm_serif.woff') format('woff');
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url('fonts/open_sans.woff') format('woff');
+  font-style: normal;
+  font-display: swap;
+}
 @layer theme, base, components, utilities;
 @layer theme {
   :root, :host {
@@ -617,9 +628,6 @@
   }
   .uppercase {
     text-transform: uppercase;
-  }
-  .italic {
-    font-style: italic;
   }
   .shadow-2xl {
     --tw-shadow: 0 25px 50px -12px var(--tw-shadow-color, rgb(0 0 0 / 0.25));
