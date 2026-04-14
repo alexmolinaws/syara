@@ -1,6 +1,17 @@
 /*! tailwindcss v4.2.2 | MIT License | https://tailwindcss.com */
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 @layer properties;
+@font-face {
+  font-family: "DM Serif Display";
+  src: url('fonts/dm_serif.woff') format('woff');
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url('fonts/open_sans.woff') format('woff');
+  font-style: normal;
+  font-display: swap;
+}
 @layer theme, base, components, utilities;
 @layer theme {
   :root, :host {
@@ -435,8 +446,8 @@
   .border-rose-800 {
     border-color: var(--color-rose-800);
   }
-  .bg-\[\#FFF1F1\] {
-    background-color: #FFF1F1;
+  .bg-\[\#FFF6F6\] {
+    background-color: #FFF6F6;
   }
   .bg-accent {
     background-color: var(--color-accent);
@@ -471,9 +482,6 @@
   .p-8 {
     padding: calc(var(--spacing) * 8);
   }
-  .p-10 {
-    padding: calc(var(--spacing) * 10);
-  }
   .px-4 {
     padding-inline: calc(var(--spacing) * 4);
   }
@@ -486,11 +494,17 @@
   .px-7 {
     padding-inline: calc(var(--spacing) * 7);
   }
+  .px-8 {
+    padding-inline: calc(var(--spacing) * 8);
+  }
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
   }
   .py-3 {
     padding-block: calc(var(--spacing) * 3);
+  }
+  .py-10 {
+    padding-block: calc(var(--spacing) * 10);
   }
   .py-14 {
     padding-block: calc(var(--spacing) * 14);
@@ -550,11 +564,14 @@
     font-size: var(--text-xl);
     line-height: var(--tw-leading, var(--text-xl--line-height));
   }
-  .text-\[1\.2rem\] {
-    font-size: 1.2rem;
-  }
   .text-\[1\.7rem\] {
     font-size: 1.7rem;
+  }
+  .text-\[1\.8rem\] {
+    font-size: 1.8rem;
+  }
+  .text-\[1\.14rem\] {
+    font-size: 1.14rem;
   }
   .text-\[2\.5rem\] {
     font-size: 2.5rem;
@@ -611,9 +628,6 @@
   }
   .uppercase {
     text-transform: uppercase;
-  }
-  .italic {
-    font-style: italic;
   }
   .shadow-2xl {
     --tw-shadow: 0 25px 50px -12px var(--tw-shadow-color, rgb(0 0 0 / 0.25));
@@ -732,6 +746,11 @@
       visibility: visible;
     }
   }
+  .md\:mb-8 {
+    @media (width >= 48rem) {
+      margin-bottom: calc(var(--spacing) * 8);
+    }
+  }
   .md\:mb-36 {
     @media (width >= 48rem) {
       margin-bottom: calc(var(--spacing) * 36);
@@ -796,6 +815,11 @@
       }
     }
   }
+  .md\:text-\[1\.21rem\] {
+    @media (width >= 48rem) {
+      font-size: 1.21rem;
+    }
+  }
   .md\:text-\[2\.4rem\] {
     @media (width >= 48rem) {
       font-size: 2.4rem;
@@ -804,6 +828,11 @@
   .lg\:top-1\/2 {
     @media (width >= 64rem) {
       top: calc(1 / 2 * 100%);
+    }
+  }
+  .lg\:mb-0 {
+    @media (width >= 64rem) {
+      margin-bottom: calc(var(--spacing) * 0);
     }
   }
   .lg\:hidden {
@@ -869,6 +898,11 @@
   .lg\:rounded-bl-\[48px\] {
     @media (width >= 64rem) {
       border-bottom-left-radius: 48px;
+    }
+  }
+  .lg\:p-10 {
+    @media (width >= 64rem) {
+      padding: calc(var(--spacing) * 10);
     }
   }
   .lg\:px-0 {
